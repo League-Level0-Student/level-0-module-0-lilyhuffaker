@@ -12,16 +12,25 @@ public class RobotSquare {
  
     	// 1. Make a new Robot
 
+Robot nugget=new Robot();
 
         // 3. Put the robot's pen down
-
+nugget.penDown();
 
         // 6. Make the robot move as fast as possible
-
+nugget.setSpeed(99);
 
         // 5. Do everything below here 4 times
-
-
+for (int i = 0; i < 4; i++) {
+	nugget.move(200);
+	nugget.turn(90);
+}
+nugget.turn(180);
+nugget.penDown();
+for (int i = 0; i < 3; i++) {
+nugget.move(150);
+nugget.turn(360/3);
+}
         //         2. Move your robot 200 pixels
 
 
